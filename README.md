@@ -8,3 +8,4 @@ https://rubygems.org/gems/fancy_audio/ Gem to add an album cover to the audio
 
 
 'https://github.com/devegoo/CD_cover_scripts/blob/main/afterchanges/MTMN%20-%20%201000%20miles%20away.png'
+https://github.com/devegoo/CD_cover_scripts/blob/prism_cd/afterchanges/MTMN%20-%20%201000%20miles%20away_v2.png
