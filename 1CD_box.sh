@@ -16,7 +16,7 @@ done
 
 
 for f in ghostcopy/*.mp3; do
-    mv -- "$f" "${f%.mp3}.png"
+    mv -- "$f" "${f%.mp3}.mp3.png"
 done
 
 for dir in ghostcopy
@@ -24,7 +24,7 @@ do
     (
       for i in ghostcopy/*.png
       do
-          convert -size 1000x1000 xc: -channel G +noise Random -virtual-pixel White -blur 0x7 -threshold 50% -separate +channel "$i"
+          convert -size 1000x1000 xc: -channel R +noise Random -virtual-pixel black -blur 0x7 -threshold 50% -separate +channel "$i"
       done
     )
 done
