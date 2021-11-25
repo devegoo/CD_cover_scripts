@@ -1,5 +1,4 @@
 #!/bin/sh
-mv *.mp3 ghostcopy/
 for dir in ghostcopy
 do
     (
