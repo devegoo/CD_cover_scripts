@@ -1,24 +1,13 @@
 #!/bin/sh
-for dir in ghostcopy
+    for i in ghostcopy/*.mp3
 do
-    (
-      for i in ghostcopy/*.png
-      do
-          convert "$i" -font Candice -pointsize 72 -fill white \
-           -stroke black -strokewidth 25 -annotate +400+200 'MTMN' \
-           -stroke white -strokewidth 20 -annotate +400+200 'MTMN' \
-           -stroke black -strokewidth 15 -annotate +400+200 'MTMN' \
-           -stroke white -strokewidth 10 -annotate +400+200 'MTMN' \
-           -stroke black -strokewidth  5 -annotate +400+200 'MTMN' \
-           -stroke none                  -annotate +400+200 'MTMN' \
-           "$i"
+    band=$(mp3info -p %a "$i")
+          convert "$i.png" -pointsize 72 -fill white \
+           -stroke black -strokewidth 25 -annotate +400+200 "$band" \
+           -stroke white -strokewidth 20 -annotate +400+200 "$band" \
+           -stroke black -strokewidth 15 -annotate +400+200 "$band" \
+           -stroke white -strokewidth 10 -annotate +400+200 "$band" \
+           -stroke black -strokewidth  5 -annotate +400+200 "$band" \
+           -stroke none                  -annotate +400+200 "$band" \
+           "$i.png"
       done
-    )
-done
-
-
-
-
-
-
- convert
