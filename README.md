@@ -17,6 +17,7 @@ Dependicies:
 
 imagemagic
 mp3info
+mp3gain
 
 ruby gems:
 - fancy_audio
