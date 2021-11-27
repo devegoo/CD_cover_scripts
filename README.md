@@ -12,3 +12,14 @@ https://github.com/devegoo/CD_cover_scripts/blob/main/afterchanges/MTMN%20-%20%2
 
 prism_cd
 https://github.com/devegoo/CD_cover_scripts/blob/prism_cd/afterchanges/MTMN%20-%20%202002.png https://github.com/devegoo/CD_cover_scripts/blob/prism_cd/afterchanges/MTMN%20-%20%201000%20miles%20away_v2.png
+
+Dependicies:
+
+imagemagic
+mp3info
+
+ruby gems:
+- fancy_audio
+- titlegen 
+- i18n
+
